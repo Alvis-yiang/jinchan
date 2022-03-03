@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.deepcre.radar.dao.ProductSalDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.deepcre.radar.entity.ProductSalEntity" id="productSalMap">
+        <result property="proSalId" column="pro_sal_id"/>
+        <result property="productId" column="product_id"/>
+        <result property="identityId" column="identity_id"/>
+        <result property="productNo" column="product_no"/>
+        <result property="price" column="price"/>
+        <result property="salFlag" column="sal_flag"/>
+        <result property="remark" column="remark"/>
+        <result property="logicFlag" column="logic_flag"/>
+    </resultMap>
+
+
+</mapper>

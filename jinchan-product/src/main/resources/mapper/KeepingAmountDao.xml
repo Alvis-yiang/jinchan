@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.deepcre.radar.dao.KeepingAmountDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.deepcre.radar.entity.KeepingAmountEntity" id="keepingAmountMap">
+        <result property="catId" column="cat_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="amount" column="amount"/>
+        <result property="remark" column="remark"/>
+        <result property="logicFlag" column="logic_flag"/>
+    </resultMap>
+
+
+</mapper>

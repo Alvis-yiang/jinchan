@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.deepcre.radar.dao.SemiMatRelationDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.deepcre.radar.entity.SemiMatRelationEntity" id="semiMatRelationMap">
+        <result property="relId" column="rel_id"/>
+        <result property="semiId" column="semi_id"/>
+        <result property="matId" column="mat_id"/>
+        <result property="remark" column="remark"/>
+        <result property="logicFlag" column="logic_flag"/>
+        <result property="matNum" column="mat_num"/>
+    </resultMap>
+
+
+</mapper>

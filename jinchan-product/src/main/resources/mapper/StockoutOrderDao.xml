@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.deepcre.radar.dao.StockoutOrderDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.deepcre.radar.entity.StockoutOrderEntity" id="stockoutOrderMap">
+        <result property="orderId" column="oder_id"/>
+        <result property="createDate" column="create_date"/>
+        <result property="createEmpid" column="create_empid"/>
+        <result property="auditEmpid" column="audit_empid"/>
+        <result property="auditDate" column="audit_date"/>
+        <result property="auditResult" column="audit_result"/>
+        <result property="remark" column="remark"/>
+        <result property="logicFlag" column="logic_flag"/>
+        <result property="filePath" column="file_path"/>
+    </resultMap>
+
+
+</mapper>

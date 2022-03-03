@@ -1,0 +1,31 @@
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/deepcreemall_admin?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      test-on-borrow: true
+      test-while-idle: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: jinchan-employee
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+
+server:
+  port: 10002
+logging:
+  level:
+    com.deepcre.radar: debug
+
+

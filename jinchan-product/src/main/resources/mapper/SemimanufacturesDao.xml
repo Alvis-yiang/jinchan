@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.deepcre.radar.dao.SemimanufacturesDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.deepcre.radar.entity.SemimanufacturesEntity" id="semimanufacturesMap">
+        <result property="semiId" column="semi_id"/>
+        <result property="semiName" column="semi_name"/>
+        <result property="semiModel" column="semi_model"/>
+        <result property="semiDescription" column="semi_description"/>
+        <result property="semiUnit" column="semi_unit"/>
+        <result property="catId" column="cat_id"/>
+        <result property="remark" column="remark"/>
+        <result property="logicFlag" column="logic_flag"/>
+        <result property="imgUrl" column="img_url"/>
+    </resultMap>
+
+
+</mapper>
